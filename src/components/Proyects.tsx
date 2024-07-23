@@ -24,7 +24,7 @@ export default function Proyects({ id }: { id: string }) {
                         <p className="py-4">
                             App de películas realizada con la API de TheMovieDB. Utiliza Next.js para el renderizado del lado del servidor y la navegación rápida, Redux para la gestión eficiente del estado de la aplicación, y Tailwind CSS para el diseño responsivo y moderno.
                         </p>
-                        <div className="cursor-pointer max-w-52 flex text-center justify-center items-center border p-2 rounded-xl dark:bg-gray-900  dark:border-gray-600 md:text-base text-xs">
+                        <div className="hover:bg-gray-950 hover:border-green-400 cursor-pointer max-w-52 flex text-center justify-center items-center border p-2 rounded-xl dark:bg-gray-900  dark:border-gray-600 md:text-base text-xs">
                             <FaCodeBranch className="mr-1"/>
                             <a href="https://github.com/MontesAriel/app-movies" target="_blank">Código</a>
                         </div>
@@ -48,7 +48,7 @@ export default function Proyects({ id }: { id: string }) {
                         <p className="py-4">
                             Clon de Spotify realizado con la API spotify-web-api-js y documentación oficial de Spotify. Utiliza React para la creación de componentes de la interfaz de usuario, Redux para la gestión del estado global de la aplicación, y Tailwind CSS para el diseño responsivo y estilizado.
                         </p>
-                        <div className="cursor-pointer max-w-52 flex text-center justify-center items-center border p-2 rounded-xl dark:bg-gray-900  dark:border-gray-600 md:text-base text-xs">
+                        <div className="hover:bg-gray-950 hover:border-green-400 cursor-pointer max-w-52 flex text-center justify-center items-center border p-2 rounded-xl dark:bg-gray-900  dark:border-gray-600 md:text-base text-xs">
                             <FaCodeBranch className="mr-1"/>
                             <a href="https://github.com/MontesAriel/clon-spotify" target="_blank">Código</a>
                         </div>
@@ -70,9 +70,9 @@ export default function Proyects({ id }: { id: string }) {
                         <p className="py-4">
                             App de criptomonedas en la cual recién implementé React y Tailwind. La aplicación está en desarrollo y se centra en proporcionar información actualizada sobre diversas criptomonedas, utilizando React para la creación de componentes de la interfaz de usuario y Tailwind CSS para el diseño responsivo y estilizado.
                         </p>
-                        <div className="cursor-not-allowed max-w-52 flex text-center justify-center items-center border p-2 rounded-xl dark:bg-gray-900  dark:border-gray-600 md:text-base text-xs">
+                        <div className="hover:bg-gray-950 hover:border-green-400 cursor-pointer max-w-52 flex text-center justify-center items-center border p-2 rounded-xl dark:bg-gray-900  dark:border-gray-600 md:text-base text-xs">
                             <FaCodeBranch className="mr-1"/>
-                            <a href="#" >Código</a>
+                            <a href="https://github.com/MontesAriel/criptomoneda" >Código</a>
                         </div>
                     </div>            
                 </div>

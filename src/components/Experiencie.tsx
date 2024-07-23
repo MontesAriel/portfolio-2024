@@ -29,7 +29,13 @@ const ExperienceItem = ({ title, company, dates, description, technologies }: Ex
                 <p className={`text-white expanding-paragraph ${isExpanded ? 'expanded' : ''}`}>
                         {isExpanded ? description : `${description.substring(0, 100)}...`}
                 </p>
-                <p className="py-2 flex flex-wrap">
+                <div className="pb-2 flex items-center font-semibold text-green-400">
+                    <button className="mt-1 mr-1" onClick={() => setIsExpanded(!isExpanded)}>
+                        {isExpanded ? "ver menos" : "saber más"}
+                    </button>
+                    {isExpanded ? <IoIosArrowDown /> : <IoIosArrowForward />}
+                </div>
+                <p className=" flex flex-wrap">
                     <strong>Tecnologías: </strong>
                     {technologies.map((tech, index) => (
                         <span key={index} className={`mt-1 md:mt-0 ml-1 text-sm font-medium me-2 px-2.5 py-0.5 rounded ${tech.bgColor} ${tech.textColor}`}>
@@ -37,12 +43,6 @@ const ExperienceItem = ({ title, company, dates, description, technologies }: Ex
                         </span>
                     ))}
                 </p>
-                <div className="flex items-center font-semibold text-green-400">
-                    <button className="mt-1 mr-1" onClick={() => setIsExpanded(!isExpanded)}>
-                        {isExpanded ? "ver menos" : "saber más"}
-                    </button>
-                    {isExpanded ? <IoIosArrowDown /> : <IoIosArrowForward />}
-                </div>
             </div>
         </li>
     );

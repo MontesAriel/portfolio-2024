@@ -9,7 +9,7 @@ export default function Header({ id }: { id: string }) {
                 <div>
                     <h1 className="text-5xl font-semibold">Hola, soy Ariel Montes</h1>
                     <div className="my-5 text-lg">
-                        <p><strong className="text-green-400">Desarrollador front end</strong> de más de dos años de experiencia.</p>
+                        <p><strong className="text-green-400">Desarrollador front end</strong> con orientación a la experiencia del usuario.</p>
                         <p>Actualmente, estoy cursando la carrera de <strong className="text-green-400">analista de sistemas</strong>.</p>
                         <p>Vivo en Buenos Aires, Argentina.</p>
                     </div>
