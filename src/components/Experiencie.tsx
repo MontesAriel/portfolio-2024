@@ -49,6 +49,8 @@ const ExperienceItem = ({ title, company, dates, description, technologies }: Ex
 };
 
 export default function Experience({ id }: { id: string }) {
+    const [isExpanded, setIsExpanded] = useState<boolean>(true);
+
     const experiences: ExperienceCompany[] = [
         {
             title: "Desarrollador front-end",
@@ -105,19 +107,29 @@ export default function Experience({ id }: { id: string }) {
             ]
         }
     ]
-
+    
     return (
         <section id={id} className="container items-center py-10 mx-auto">
             <div>
-                <div className="flex items-center pb-5">
-                    <FaBriefcase className="text-2xl mr-1" />
-                    <h2 className="text-3xl font-semibold">Experiencia laboral</h2>
+                <div className="flex items-center justify-between pb-5">
+                    <div className="flex items-center">
+                        <FaBriefcase className="text-2xl mr-1" />
+                        <h2 className="text-3xl font-semibold">Experiencia laboral</h2>
+                    </div>
+                    <div>
+                        {isExpanded ? <IoIosArrowDown className="w-10 text-3xl cursor-pointer" onClick={() => setIsExpanded(!isExpanded)}/> : <IoIosArrowForward className="w-10 text-3xl cursor-pointer" onClick={() => setIsExpanded(!isExpanded)}/>}
+                    </div>
                 </div>
-                <ol className="relative text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400">
-                    {experiences.map((exp, index) => (
-                        <ExperienceItem key={index} {...exp} />
-                    ))}
-                </ol>
+                {
+                    isExpanded && 
+                    <ol 
+                        className={`relative text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400 ${isExpanded ? 'expanded' : ''}`}
+                    >
+                        {experiences.map((exp, index) => (
+                            <ExperienceItem key={index} {...exp} />
+                        ))}
+                    </ol>
+                }
             </div>
         </section>
     );

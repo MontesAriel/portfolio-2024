@@ -39,3 +39,19 @@ body {
 .expanding-paragraph.expanded {
   max-height: 500px; 
 }
+
+
+
+
+
+
+
+.expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.expandable-content.expanded {
+  max-height: 1000px; /* Ajusta este valor según el contenido */
+}
