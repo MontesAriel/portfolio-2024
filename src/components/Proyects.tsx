@@ -70,7 +70,7 @@ export default function Proyects({ id }: { id: string }) {
 
                     <div className="lg:flex lg:justify-around">
                         <div>
-                            <Image src="/app-cripto.PNG" alt="app movies" width={600} height={600} className="rounded"/>
+                            <Image src="/mercado-libre.jpeg" alt="clon mercado libre" width={600} height={600} className="rounded"/>
                         </div>
                         <div className="flex flex-col justify-around max-w-3xl">
                             <h4 className="text-2xl py-2 md:py-0 md:pb-2 font-semibold">Mercado Libre</h4>
