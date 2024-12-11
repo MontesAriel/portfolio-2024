@@ -73,19 +73,19 @@ export default function Proyects({ id }: { id: string }) {
                             <Image src="/app-cripto.PNG" alt="app movies" width={600} height={600} className="rounded"/>
                         </div>
                         <div className="flex flex-col justify-around max-w-3xl">
-                            <h4 className="text-2xl py-2 md:py-0 md:pb-2 font-semibold">App Criptomonedas</h4>
+                            <h4 className="text-2xl py-2 md:py-0 md:pb-2 font-semibold">Mercado Libre</h4>
                             <div className="flex">
-                                <span className="ml-1 bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">React</span>
-                                <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Tailwind</span>
-                                <span className="bg-red-100 text-red-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">en curso</span>
-
+                                <span className="ml-1 bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">PHP</span>
+                                <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Mysql</span>
+                                <span className="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Css</span>
+                                <span className="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML</span>
                             </div>
                             <p className="py-4">
-                                App de criptomonedas en la cual recién implementé React y Tailwind. La aplicación está en desarrollo y se centra en proporcionar información actualizada sobre diversas criptomonedas, utilizando React para la creación de componentes de la interfaz de usuario y Tailwind CSS para el diseño responsivo y estilizado.
+                                Proyecto que realicé para la universidad en el cual es un Clon de Mercado Libre con php, mysql, html y css. Tiene las funcionalidades de poder registrarse y loguearse como vendedor o usuario. En la vista vendedor podes agregar, eliminar o editar los productos del vendedor. En la vista usuario tiene un home y una vista del producto.
                             </p>
                             <div className="hover:bg-gray-950 hover:border-green-400 cursor-pointer max-w-52 flex text-center justify-center items-center border p-2 rounded-xl dark:bg-gray-900  dark:border-gray-600 md:text-base text-xs">
                                 <FaCodeBranch className="mr-1"/>
-                                <a href="https://github.com/MontesAriel/criptomoneda" >Código</a>
+                                <a href="https://github.com/MontesAriel/mercado-libre-php" target="_blank" >Código</a>
                             </div>
                         </div>            
                     </div>
